@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Quest: Position</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Position: Static</h1>
     <div class="elemento elemento-estatico">STATIC</div>
+
+    <p>
+      Os elementos, por padrão, já são <strong>static</strong>, não é necessário
+      definir um elemento como <strong>static</strong>.
+    </p>
 
     <h1>Position: Relative</h1>
     <div class="elemento elemento-relativo">RELATIVE</div>
 
+    <p>
+      Já o <strong>relative</strong> é usado para podermos movimentar um
+      determinado elemento na tela para qualquer lado que desejarmos.
+    </p>
+
     <h1>Position: Absolute</h1>
     <div class="elemento elemento-absoluto">ABSOLUTE</div>
+
+    <p>Faz com que o elemento se sobre-ponha aos demais, é como se criassemos uma nova camada para esse elemento e colocassemos ela por cima dos outros elementos. Não é muito usual usar somente o <strong>absolute</strong>, porque é muito difícil controlar sua posição. O correto é colocar esse elemento dentro de um outro elemente <em>pai</em>.</p>
 
     <h1>Position: Outro elemento estático</h1>
     <div class="elemento elemento-estatico">OUTRO ELEMENTO ESTÁTICO</div>
 
     <h1>Elemento relativo com filho</h1>
     <div class="elemento elemento-relativo-com-filho">
-        <div class="elemento elemento-absoluto-com-pai">Absolute com pai</div>
+      <div class="elemento elemento-absoluto-com-pai">Absolute com pai</div>
     </div>
-</body>
+
+    <p>Essa é a maneira correta de utilizar o <strong>position</strong> <strong>absolute</strong>. Colocando o elemento <strong>absolute</strong> dentro de outro elemento, o elemento <strong>absolute</strong> será <em>absoluto</em> somente em relação ao seu <em>pai</em>, tornando a estilização da sua posição mais fácil.</p>
+
+  </body>
 </html>

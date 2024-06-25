@@ -2,6 +2,11 @@
     margin: 0;
 }
 
+p {
+    font-size: 25px;
+    padding: 10px;
+}
+
 .elemento {
     color: #fff;
     font-size: 32px;

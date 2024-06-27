@@ -9,7 +9,9 @@ body {
 
 .cabecalho {
     background-color: #dc143c;
-    padding: 10px 15px;
+    padding: 5px 10px;
+    display: inline-block;
+    width: 100%;
 }
 
 .cabecalho .logo {
@@ -35,4 +37,20 @@ main {
 
 .image img {
     width: 100%;
+}
+
+@media (max-width: 576px) {
+    .cabecalho {
+        background-color: #228C22;
+        text-align: center;
+        width: 100%;
+    }
+
+    .cabecalho nav li {
+        display: block;
+    }
+
+    .cabecalho nav {
+        float: none;
+    }
 }
